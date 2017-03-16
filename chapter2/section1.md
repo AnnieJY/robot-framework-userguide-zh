@@ -19,3 +19,10 @@
 * 变量文件提供了比资源文件更灵活的变量创建方式。
 
 ## 2.1.2 支持的文件格式
+Robot Framework 的测试数据 是被定义为表格的形式，也可以使用超文本标记语言（HTML),Tab制表符分割值(TSV)，纯文本，reStructuredText(常简写为 reST,是 Python Docutils 项目的一部分)，这些格式的细节,以及主要好处和问题,在随后的部分中进行阐述。使用哪种格式取决于上下文,但如果没有特殊需求，推荐纯文本格式。
+
+Robot Framework基于文件的扩展名来选择test data解析器，扩展是不区分大小写的，HTML公认扩展名是 .html  .htm  .xhtml ; 纯文本公认扩展名有 .tsv（for TSV） .txt 以及特殊的 .robot 还有  reStructuredText 的.rst 和.rest 
+
+不同的测试数据模板可用于HTML和TSV格式更容易开始编写测试。
+请注意
+特殊的纯文本文件扩展 .robot 从  robot Framework 2.7.6.开始支持
